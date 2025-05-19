@@ -1,0 +1,111 @@
+# Thuật toán tìm UCLN với các lệnh cơ bản bằng Simple MIPS32 core, made by LinKK-isme
+addi r1, r0, 56
+addi r2, r0, 98
+
+LOOP:
+    seq r3, r1, r2
+    bne r3, r0, EXIT
+    slt r3, r1, r2
+    beq r3, r0, ELSE
+    sub r2, r2, r1
+    j ENDIF
+    ELSE:
+        sub r1, r1, r2
+    ENDIF:
+        j LOOP
+EXIT:
+    sw r1, 100(r0)  # Lưu kết quả vào ô nhớ 100
+    lw r4, 100(r0)  # Load từ ô nhớ 100 vào thanh ghi r4 để kiểm tra
+######################################################################################
+
+# Thuật toán tìm UCLN với các lệnh giả bằng Simple MIPS32 core, made by LinKK-isme
+addi r1, r0, 32
+addi r2, r0, 84
+
+LOOP2:
+    beq r1, r2, EXIT2
+    bgt r1, r2, ELSE2
+    sub r2, r2, r1
+    j ENDIF2
+    ELSE2:
+        sub r1, r1, r2
+    ENDIF2:
+        j LOOP2
+EXIT2:
+    sw r1, 101(r0)  # Lưu kết quả vào ô nhớ 101
+    lw r5, 101(r0)  # Load từ ô nhớ 101 vào thanh ghi r5 để kiểm tra
+######################################################################################
+
+# Thuật toán tính tổng các số từ 1 đến N-1, made by LinKK-isme
+addi r1, r0, 10  # N = 10
+addi r2, r0, 0   # sum = 0
+addi r3, r0, 1   # i = 1
+SUM_LOOP:
+    add r2, r2, r3  # sum += i
+    addi r3, r3, 1  # i++
+    slt r4, r3, r1  # i < N ?
+    bne r4, r0, SUM_LOOP
+sw r2, 102(r0)  # Lưu kết quả vào ô nhớ 102
+lw r5, 102(r0)  # Load từ ô nhớ 102 để kiểm tra
+######################################################################################
+
+# Thuật toán nhân từ phép cộng, made by LinKK-isme
+addi r1, r0, 0       # Result = 0
+addi r2, r0, 13       # Multiplicand = 13
+addi r3, r0, 5       # Multiplier = 5
+addi r4, r0, 0       # Counter i = 0
+
+MUL_LOOP:
+beq r4, r3, MUL_EXIT  # If i == multiplier, exit
+add r1, r1, r2        # result += multiplicand
+addi r4, r4, 1        # i++
+j MUL_LOOP
+
+MUL_EXIT:
+sw r1, 100(r0)    # Store result in memory address 100
+lw r5, 100(r0)    # Load result to r5 for verification
+######################################################################################
+
+# Thuật toán tìm số Fibonacci thứ N, made by LinKK-isme
+addi r1, r0, 0       # Fib(0) = 0
+addi r2, r0, 1       # Fib(1) = 1
+addi r3, r0, 16       # n = 16
+addi r4, r0, 2       # Counter i = 2
+
+FIB_LOOP:
+bgt r4, r3, FIB_EXIT  # If i > n, exit
+add r5, r1, r2        # r5 = Fib(i-1) + Fib(i-2)
+add r1, r0, r2        # Fib(i-1) = Fib(i-2)
+add r2, r0, r5        # Fib(i) = r5
+addi r4, r4, 1        # i++
+j FIB_LOOP
+
+FIB_EXIT:
+sw r2, 110(r0)        # Store result in memory address 110
+lw r7, 110(r0)        # Load result to r7 for verification
+######################################################################################
+
+# Thuật toán tìm giai thừa của N, made by LinKK-isme
+addi r1, r0, 1       # Result = 1
+addi r2, r0, 7       # n = 7
+addi r3, r0, 1       # Counter i = 1
+
+FACT_LOOP:
+bgt r3, r2, FACT_EXIT  # If i > n, exit
+addi r4, r0, 0         # Temp result = 0
+addi r5, r0, 0         # Multiplication counter = 0
+add r6, r0, r1         # Save current result
+MUL_LOOP2:
+beq r5, r3, MUL_EXIT2   # If counter == i, exit
+add r4, r4, r6         # Temp result += current result
+addi r5, r5, 1         # counter++
+j MUL_LOOP2
+MUL_EXIT2:
+add r1, r0, r4         # Update result
+addi r3, r3, 1         # i++
+j FACT_LOOP
+
+FACT_EXIT:
+sw r1, 111(r0)         # Store result in memory address 111
+lw r8, 111(r0)         # Load result to r8 for verification
+######################################################################################
