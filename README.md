@@ -203,6 +203,14 @@ The scoreboard reports pass/fail results in `run.log`, confirming correct execut
 
 ![Without_scb](https://github.com/so1taynguyen/Simple-MIPS32-Hardware-Implementation-with-Python-Assembler/blob/main/images/Result_waveform.png)
 
+* Quartus synthesization
+
+![Syn](https://github.com/so1taynguyen/Simple-MIPS32-Hardware-Implementation-with-Python-Assembler/blob/main/images/Synthesis.png)
+
+* Fmax calculation
+
+![Fmax](https://github.com/so1taynguyen/Simple-MIPS32-Hardware-Implementation-with-Python-Assembler/blob/main/images/Fmax.png)
+
 <p align="right">(<a href="#readme-top">Back to top</a>)</p>
 
 
