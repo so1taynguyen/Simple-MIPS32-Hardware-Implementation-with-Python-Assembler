@@ -160,9 +160,9 @@ Follow these steps to run the MIPS32 processor simulation:
     * Example:
         ```assembly
         main:
-            addi $t0, $0, 5
-            addi $t1, $0, 3
-            add $t2, $t0, $t1 
+            addi $r1, $r0, 5
+            addi $r3, $r0, 3
+            add $r2, $r1, $r3 
         ```
 2. Edit run/run.sh to select your simulation tool and scoreboard option (`+define+RTL_VERIFY`)
     * Example with scoreboard:
