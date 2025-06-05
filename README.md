@@ -48,7 +48,7 @@
 
 This project features a synthesizable 32-bit MIPS processor core (MIPS32) implemented in Verilog, supporting a subset of the MIPS ISA with basic and pseudo-instructions for arithmetic, logical, shift, comparison, memory access, and control flow operations. It includes a Python assembler that converts assembly code into machine code, generating instruction (`imem_data.mem`) and data (`dmem_data.mem`) memory files for simulation and verification.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">Back to top</a>)</p>
 
 
 
@@ -148,7 +148,7 @@ The following tools are required to run the assembler, simulate the processor, a
    git remote -v # confirm the changes
    ```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">Back to top</a>)</p>
 
 
 
@@ -160,9 +160,9 @@ Follow these steps to run the MIPS32 processor simulation:
     * Example:
         ```assembly
         main:
-            addi $t0, $0, 5
-            addi $t1, $0, 3
-            add $t2, $t0, $t1
+            addi $r3, $r0, 5
+            addi $r1, $r0, 3
+            add $r2, $r3, $r1
         ```
 2. Edit run/run.sh to select your simulation tool and scoreboard option (`+define+RTL_VERIFY`)
     * Example with scoreboard:
@@ -187,7 +187,7 @@ Follow these steps to run the MIPS32 processor simulation:
         ```
 For detailed examples, see refer to the sample programs in input_instr.txt for algorithms like GCD, summation, and Fibonacci.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">Back to top</a>)</p>
 
 <!-- ROADMAP -->
 ## Achievement
@@ -203,7 +203,7 @@ The scoreboard reports pass/fail results in `run.log`, confirming correct execut
 
 ![Without_scb](https://github.com/so1taynguyen/Simple-MIPS32-Hardware-Implementation-with-Python-Assembler/blob/main/images/Result_waveform.png)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">Back to top</a>)</p>
 
 
 
@@ -227,7 +227,7 @@ Contributions are welcome to enhance the project. Suggestions include optimizing
     ```
 4. Open a pull request
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">Back to top</a>)</p>
 
 
 
@@ -236,7 +236,7 @@ Contributions are welcome to enhance the project. Suggestions include optimizing
 
 [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://www.instagram.com/_2imlinkk/) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/linkk-isme/) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:nguyenvanlinh0702.1922@gmail.com) 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">Back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
