@@ -95,7 +95,7 @@ This project features a synthesizable 32-bit MIPS processor core (MIPS32) implem
 
 ### Project Architecture
 
-![Top_architect](https://github.com/so1taynguyen/Simple-MIPS32-Hardware-Implementation-with-Python-Assembler/blob/main/images/FPU%20co-processor.png) 
+![Top_architect](https://github.com/so1taynguyen/Simple-MIPS32-Hardware-Implementation-with-Python-Assembler/blob/main/images/MIPS32.png) 
 
 <p align="right">(<a href="#readme-top">Back to top</a>)</p>
 
