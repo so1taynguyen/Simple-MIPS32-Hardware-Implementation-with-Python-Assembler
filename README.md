@@ -257,6 +257,6 @@ Contributions are welcome to enhance the project. Suggestions include optimizing
 [issues-shield]: https://img.shields.io/github/issues/so1taynguyen/Simple-MIPS32-Hardware-Implementation-with-Python-Assembler.svg?style=for-the-badge
 [issues-url]: https://github.com/so1taynguyen/Simple-MIPS32-Hardware-Implementation-with-Python-Assembler/issues
 [license-shield]: https://img.shields.io/github/license/so1taynguyen/Simple-MIPS32-Hardware-Implementation-with-Python-Assembler.svg?style=for-the-badge
-[license-url]: https://github.com/so1taynguyen/Simple-MIPS32-Hardware-Implementation-with-Python-Assembler/blob/main/LICENSE.txt
+[license-url]: https://github.com/so1taynguyen/Simple-MIPS32-Hardware-Implementation-with-Python-Assembler/blob/main/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/linkk-isme/
